@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotózás - Árak</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" title="normal">
+    <link rel="alternate stylesheet" type="text/css" href="styleBig.css" title="nagybetus">
+    <script src="scripts/styleswitcher.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="./photos/my_logo.png" alt="Kato Zsofia felirat"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="sr-only">Menü</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse"  id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Rólam</a>
+                <a class="nav-link" href="utazas.html">Utazás</a>
+                <a class="nav-link" href="artsy.html"><span lang="en">Artsy</span></a>
+                <a class="nav-link" href="portrek.html">Portrék/Rendezvények</a>
+                <a id="active" class="nav-link" href="arak.html">Árak</a>
+              <a class="nav-link" id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;"><span class="ikon"></span>Nagybetűs változat</a>
+	          <a class="nav-link" id="normalbetus" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span class="ikon"></span>Normál változat</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <header>
+        <div class="landing-screen">
+          <h1>ÁRAK</h1>
+          <a class="scroll-down" href="#main">
+            <figure>
+              <figcaption id="ugras">ugrás a tartalomra</figcaption>
+              <img src="photos/scroll.png" alt="görgess le ikon">
+            </figure>
+          </a>
+        </div>
+      </header>
+
+      <main id="main">
+
+        <hr id="first" class="travel_divider">
+        
+        <section class="galeria" id="portrait">
+          <h2><span lang="en">Highlights</span></h2>
+
+          <p>A kép teljes ablakba való nézetéhez kattintson a megnézni kívánt képre</p>
+
+            <div class="columns">
+
+              <div class="column">
+                <a href="./photos/iceland/DSC_0041.jpg" target="_blank">
+                  <img class="thumbnail-pic" src="./photos/iceland/DSC_0041.jpg" alt="Hexagonális kőoszlop-falú kanyon smaragdzöld vízzel">
+                </a>
+
+                <a href="./photos/austria/Sunset-0248.jpeg" target="_blank">
+                  <img class="thumbnail-pic" src="./photos/austria/Sunset-0248.jpeg" alt="Naplemente egy tisztáson az alpokban vörös fűvel">
+                </a>
+
+              </div>
+
+              <div class="column-1">
+                <a href="./photos/iceland/DSC_0838.jpg" target="_blank">
+                  <img class="thumbnail-pic" src="./photos/iceland/DSC_0838.jpg" alt="Sárga dzsekis ember sétál egy óriási vízesés felé">
+                </a>
+                <a href="./photos/moscow/DSC_0407-1.jpg" target="_blank">
+                  <img class="thumbnail-pic" src="./photos/moscow/DSC_0407-1.jpg" alt="Boldog Vazul-székesegyház havazás közben">
+                </a>
+                </div>
+
+              <div class="column">
+                <a href="./photos/iceland/DSC_0780.jpg" target="_blank">
+                  <img class="thumbnail-pic" src="./photos/iceland/DSC_0780.jpg" alt="Kék folyó egy nagy sziklával a parton">
+                </a>
+                <a href="./photos/motor/FB413090-0ADA-4CA8-BCBC-05EC3F05DB0E_1_105_c.jpg" target="_blank">
+                  <img class="thumbnail-pic" src="./photos/motor/FB413090-0ADA-4CA8-BCBC-05EC3F05DB0E_1_105_c.jpg" alt="Egy motor ül egy fekete Yamaha motron és hátra néz">
+                </a>
+            </div>
+
+            </div>
+        </section>
+
+        <hr class="travel_divider">
+
+        <section id="tablazat">
+          <h2>Árak</h2>
+          <table>
+            <caption>
+              <details>
+                <summary>
+                  Infók a nyomtatott képekről és árakiról
+                </summary>
+                <p>Minden kép a legjobb minőségű fotópapírra van nyomtatva, így
+                  biztosítva azt, hogy semmilyen részlet ne veszlődjön el a képről</p>
+                
+              </details>
+            </caption>
+            
+            <tr>
+              <th>méret (cm)</th>
+              <th>1-10db</th>
+              <th>11-50db</th>
+              <th>51+ db</th>
+            </tr>
+
+            <tr>
+              <td>20x30</td>
+              <td>10$/db</td>
+              <td>8$/db</td>
+              <td>6$/db</td>
+            </tr>
+
+            <tr>
+              <td>40x60</td>
+              <td>15$/db</td>
+              <td>13$/db</td>
+              <td>11$/db</td>
+            </tr>
+
+            <tr>
+              <td>80x120</td>
+              <td>25$/db</td>
+              <td>22$/db</td>
+              <td>20$/db</td>
+            </tr>
+          </table>
+        </section>
+
+        <hr class="travel_divider">
+
+        <section id="review">
+
+          <h2>Értékelés</h2>
+          <form action="mailto:katozsofia7@gmail.com" method="post" enctype="text/plain">
+            <fieldset>
+              <legend>Milyenre értékelné a képeket?</legend>
+
+              <input type="radio" class="rating" name="jegy" id="low" value="low">
+              <label for="low"> 1-3</label><br>
+
+              <input type="radio" class="rating" name="jegy" id="mid" value="mid">
+              <label for="mid"> 4-6</label><br>
+
+              <input type="radio" class="rating" name="jegy" id="good" value="good">
+              <label for="good"> 7-8</label><br>
+
+              <input type="radio" class="rating" name="jegy" id="best" value="best">
+              <label for="best"> 9-10</label><br>
+
+            </fieldset>
+
+            <hr class="form-d">
+
+            <fieldset>
+              <legend>Válassza ki a kategóriákat amelyek tetszettek önnek</legend>
+
+              <input type="checkbox" class="category" name="category" id="travel" value="Travel">
+              <label for="travel">Utazás</label><br>
+
+              <input type="checkbox" class="category" name="category" id="artsy" value="Artsy">
+              <label for="artsy"><span>Artsy</span></label><br>
+
+              <input type="checkbox" class="category" name="category" id="portraitevent" value="Portrait/Events">
+              <label for="portraitevent">Portrék/Rendezvények</label><br>
+
+              <input type="checkbox" class="category" name="category" id="none" value="None">
+              <label for="none">Egyik sem</label><br>
+
+            </fieldset>
+
+            <hr class="form-d">
+
+            <label id="e-mail" for="emailcim">Adja meg az email címét: </label><br>
+            <input type="email" id="emailcim" name="email">
+
+            <hr class="form-d">
+
+            <label for="message">Írjon egy megjegyzést, észrevételt a képekkel kapcsolatban, vagy kérdezzen a nyomtatásról. (max 300 karakter)</label>
+            <textarea id="message" name="message" maxlength="300"></textarea>
+
+            <hr class="form-d">
+
+            <input class="buttons" type="reset" value="Visszaállítás">
+            <input class="buttons" type="submit" value="Küldés">
+          </form>
+        </section>
+
+      </main>
+
+
+      <footer>
+        <h4>Vedd fel velem a kapcsolatot</h4>
+        <div id="logo">
+            <a href="https://www.facebook.com/zsofiaeszter.kato" target="_blank">
+                <figure>
+                    <img id="facebook" src="./photos/logo/facebook-logo-png-9025.png" alt="Facebook logo">
+                    <figcaption>Facebook</figcaption>
+                </figure>
+            </a>
+            <a href="https://www.instagram.com/k_zsofi18/" target="_blank">
+                <figure>
+                    <img id="instagram" src="./photos/logo/logo-instagram-png-13566.png" alt="Instagram logo">
+                    <figcaption>Instagram</figcaption>
+                </figure>
+            </a>
+            <a href="https://github.com/Zsofu007" target="_blank">
+                <figure>
+                    <img id="email" src="./photos/logo/github.png" alt="Github logo">
+                    <figcaption>Github</figcaption>
+                </figure>
+            </a>
+            
+        </div>
+    </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

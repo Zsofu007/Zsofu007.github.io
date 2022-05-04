@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotózás - Artsy</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" title="normal">
+    <link rel="alternate stylesheet" type="text/css" href="styleBig.css" title="nagybetus">
+    <script src="scripts/styleswitcher.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="./photos/my_logo.png" alt="Kato Zsofia felirat"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="sr-only">Menü</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse"  id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Rólam</a>
+                <a class="nav-link" href="utazas.html">Utazás</a>
+                <a id="active" class="nav-link" href="artsy.html"><span lang="en">Artsy</span></a>
+                <a class="nav-link" href="portrek.html">Portrék/Rendezvények</a>
+                <a class="nav-link" href="arak.html">Árak</a>
+              <a class="nav-link" id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;"><span class="ikon"></span>Nagybetűs változat</a>
+	          <a class="nav-link" id="normalbetus" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span class="ikon"></span>Normál változat</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <header>
+        <div class="landing-screen">
+          <h1>ARTSY</h1>
+          <a class="scroll-down" href="#main">
+            <figure>
+              <figcaption id="ugras">ugrás a tartalomra</figcaption>
+              <img src="photos/scroll.png" alt="görgess le ikon">
+            </figure>
+          </a>
+        </div>
+      </header>
+
+      <main id="main">
+        
+        <aside>A pandémiának köszönhetően fel kellett találjam magam fotózás terén, így születtek a következő képek.</aside>
+
+        <hr class="travel_divider">
+
+        <section class="galeria" id="motor">
+          <h2>Motor</h2>
+
+            <div class="columns">
+
+              <div class="column">
+                <img src="./photos/motor/DSC_8534.jpg" alt="Egy motoros ül egy fehér Honda motoron egy őszi erdő előtt">
+                <img src="./photos/motor/55FEAA22-E5CD-43A4-B1AE-B333E3CAD34D_1_105_c.jpg" alt="Egy fekete Yamaha motor előlről fényképezve">
+              </div>
+
+              <div class="column-1">
+                <img src="./photos/motor/DSC_8543.jpg" alt="Egy motoros térdel egy fehér Honda motor előtt egy őszi erdő mellett">
+                <img src="./photos/motor/FB413090-0ADA-4CA8-BCBC-05EC3F05DB0E_1_105_c.jpg" alt="Egy motor ül egy fekete Yamaha motron és hátra néz">
+              </div>
+
+              <div class="column">
+                <img src="./photos/motor/DSC_8536.jpg" alt="Egy motoros ül egy fehér Honda motoron és lehajtja a sisakját egy őszi erdő előtt">
+                <img src="./photos/motor/F4368144-BDE6-422C-9218-7EFA69B137FF_1_105_c.jpg" alt="Egy motoros térdel egy fekete Yamaha motor előtt">
+            </div>
+
+          </div>
+      </section>
+
+      <hr class="travel_divider">
+
+      <section class="galeria" id="underwater">
+        <h2>Vízalatti</h2>
+
+          <div class="columns">
+
+            <div class="column">
+              <img src="./photos/underwater/DSC_0056-min.jpg" alt="Piros húsvéti tojás esik be a vízbe">
+              <img src="./photos/underwater/DSC_0100-min.jpg" alt="Alexander vodkás üveg esik be a vízbe">
+            </div>
+
+            <div class="column">
+              <img src="./photos/underwater/DSC_0283-min.jpg" alt="Mű-koponya esik be a vízbe">
+              <img src="./photos/underwater/DSC_0396-min.jpg" alt="Egy ököl megy át a víz felszínén">
+          </div>
+
+          <div class="column">
+            <img src="./photos/underwater/DSC_0631-1-min.jpg" alt="Három dobókocka esik be a vízbe">
+            <img src="./photos/underwater/DSC_0784-1-min.jpg" alt="Kék iphone x esik be a vízbe">
+          </div>
+        </div>
+    </section>
+
+    <hr class="travel_divider">
+
+    <section class="galeria" id="product">
+      <h2>Termékek</h2>
+
+        <div class="columns">
+
+          <div class="column">
+            <img src="./photos/product/DSC_0070-min.jpg" alt="Black Opium parfüm kék körkörös ledes háttérrel">
+            <img src="./photos/product/DSC_0101-min.jpg" alt="Martini vörös körkörös háttérrel">
+          </div>
+
+          <div class="column">
+            <img src="./photos/product/DSC_0079-min.jpg" alt="Black Opium parfüm kék és lila ledes háttérrel">
+            <img src="./photos/product/DSC_0096-min.jpg" alt="Black Opium parfüm kék absztrakt háttérrel">
+          </div>
+
+          <div class="column">
+            <img src="./photos/product/DSC_0088-min.jpg" alt="Black Opium parfüm kék absztrakt háttérrel">
+            <img src="./photos/product/DSC_0111-min.jpg" alt="Martini vörös ledes háttérrel">
+          </div>
+
+      </div>
+
+  </section>
+
+    <a id="jump-up-travel" href="#body">Ugrás az oldal tetejére</a>
+
+    <hr class="travel_divider">
+
+
+  <p class="idezet"><span lang="en"><cite>„The desire to create is one of the deepest yearnings of the human soul.”
+  </cite>- Dieter F. Uchtdorf </span></p>
+
+</main>
+
+
+      <footer>
+        <h4>Vedd fel velem a kapcsolatot</h4>
+        <div id="logo">
+            <a href="https://www.facebook.com/zsofiaeszter.kato" target="_blank">
+                <figure>
+                    <img id="facebook" src="./photos/logo/facebook-logo-png-9025.png" alt="Facebook logo">
+                    <figcaption>Facebook</figcaption>
+                </figure>
+            </a>
+            <a href="https://www.instagram.com/k_zsofi18/" target="_blank">
+                <figure>
+                    <img id="instagram" src="./photos/logo/logo-instagram-png-13566.png" alt="Instagram logo">
+                    <figcaption>Instagram</figcaption>
+                </figure>
+            </a>
+            <a href="https://github.com/Zsofu007" target="_blank">
+              <figure>
+                  <img id="email" src="./photos/logo/github.png" alt="Github logo">
+                  <figcaption>Github</figcaption>
+              </figure>
+          </a>
+            
+        </div>
+    </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

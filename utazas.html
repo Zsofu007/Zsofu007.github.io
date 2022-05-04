@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotózás - Utazás</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" title="normal">
+    <link rel="alternate stylesheet" type="text/css" href="styleBig.css" title="nagybetus">
+    <script src="scripts/styleswitcher.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="index.html"><img src="./photos/my_logo.png" alt="Kato Zsofia felirat"></a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></s
+              pan>
+            <span class="sr-only">Menü</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse"  id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="index.html">Rólam</a>
+              <a id="active" class="nav-link" href="utazas.html">Utazás</a>
+              <a class="nav-link" href="artsy.html"><span lang="en">Artsy</span></a>
+              <a class="nav-link" href="portrek.html">Portrék/Rendezvények</a>
+              <a class="nav-link" href="arak.html">Árak</a>
+              <a class="nav-link" id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;"><span class="ikon"></span>Nagybetűs változat</a>
+	            <a class="nav-link" id="normalbetus" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span class="ikon"></span>Normál változat</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <header>
+        <div class="landing-screen">
+          <h1>UTAZÁS</h1>
+          <a class="scroll-down" href="#main">
+            <figure>
+              <figcaption id="ugras">ugrás a tartalomra</figcaption>
+              <img src="photos/scroll.png" alt="görgess le ikon">
+            </figure>
+          </a>
+        </div>
+      </header>
+
+      <main id="main">
+        <p class="idezet"><span lang="en"><cite>„Photography isn’t about just pushing that button. It’s about the experience of being there.”</cite> - Don McCullin </span></p>
+
+        <hr class="travel_divider">
+
+        <section class="galeria" id="moscow">
+          <h2>Moszkva</h2>
+
+            <div class="columns">
+
+              <div class="column">
+                <img src="./photos/moscow/DSC_0407-1.jpg" alt="Boldog Vazul-székesegyház havazás közben">
+                <img src="./photos/moscow/DSC_0444.jpg" alt="Cukrozott alma a karácsonyi vásárba">
+              </div>
+
+              <div class="column">
+                <img src="./photos/moscow/DSC_0405.jpg" alt="A Vörös Tér bejárata">
+                <img src="./photos/moscow/DSC_0485.jpg" alt="Egy moszkvai metrómegálló mennyezete">
+            </div>
+
+            <div class="column">
+              <img src="./photos/moscow/DSC_0420.jpg" alt="Boldog Vazul-székesegyház tornyai">
+              <img src="./photos/moscow/DSC_0517-1.jpg" alt="Moszkva modern negyedébe felhőkarcolók között egy luxusautó">
+            </div>
+          </div>
+      </section>
+
+      <hr class="travel_divider">
+
+      <section class="galeria" id="ireland">
+        <h2>Írország</h2>
+
+          <div class="columns">
+
+            <div class="column">
+              <img src="./photos/ireland/DSC_0109.jpg" alt="A sziklafalon kinőve egy kis rózsaszín virág">
+              <img src="./photos/ireland/DSC_0130.jpg" alt="Egy öböl borús időben">
+            </div>
+
+            <div class="column">
+              <img src="./photos/ireland/DSC_0272.jpg" alt="Sörcsap a Guinnes hárfa alakjába">
+              <img src="./photos/ireland/DSC_0194.jpg" alt="A Dublini könyvtár belülről">
+          </div>
+
+          <div class="column">
+            <img src="./photos/ireland/DSC_0206.jpg" alt="A dublini katedrális ablaka és tornyai kívűlről">
+            <img src="./photos/ireland/DSC_0134.jpg" alt="Modern épület előtt egy villanyoszlop">
+          </div>
+        </div>
+    </section>
+
+    <hr class="travel_divider">
+
+    <section class="galeria" id="iceland">
+      <h2>Izland</h2>
+
+        <div class="columns">
+
+          <div class="column">
+            <img src="./photos/iceland/DSC_0041.jpg" alt="Hexagonális kőoszlop-falú kanyon smaragdzöld vízzel">
+            <img src="./photos/iceland/DSC_0585.jpg" alt="Gejzír kitörés a háttérben és egy kék tó">
+          </div>
+
+          <div class="column">
+            <img src="./photos/iceland/DSC_0780.jpg" alt="Kék folyó egy nagy sziklával a parton">
+            <video  controls poster="./photos/video-thumbnail/Screenshot-2022-04-28-at-19.48.08.png">
+              <source src="Iceland-in-10-Seconds.mp4" type="video/mp4">
+              A böngésződ nem támogatja a videó lejátszását.
+            </video>
+          </div>
+
+          <div class="column">
+            <img src="./photos/iceland/DSC_0838.jpg" alt="Sárga dzsekis ember sétál egy óriási vízesés felé">
+            <img src="./photos/iceland/DSC_0931.jpg" alt="Sárga dzsekis ember áll egy repülőroncs szárnyán">
+          </div>
+
+      </div>
+
+      <a id="video-description" href="/videoleiras.html" target="_blank">A videó leírásához kattints ide</a>
+  </section>
+
+  <hr class="travel_divider">
+
+  <section class="galeria" id="stpetersburg">
+    <h2>Szentpétervár</h2>
+
+      <div class="columns">
+
+        <div class="column">
+          <img src="./photos/stpetersburg/20200104_113637700_iOS.jpg" alt="A szentpétervári nyáripalota előtti lépcső havas tájjal">
+          <img src="./photos/stpetersburg/20200103_162005300_iOS.jpg" alt="Arannyal díszített piros szoba a nyáripalotába">
+        </div>
+
+        <div class="column-2">
+          <img src="./photos/stpetersburg/20200104_091331200_iOS.jpg" alt="A szentpétervári nyáripalota eleje napsütésben">
+          <img src="./photos/stpetersburg/20200103_184211300_iOS.jpg" alt="Az ermitázs esti fényekben orosz zászlóval">
+      </div>
+
+      <div class="column">
+        <img src="./photos/stpetersburg/20200104_112100100_iOS.jpg" alt="Fehérbe öltözött lány két fa sor között néz hátra havazásban">
+        <img src="./photos/stpetersburg/20200103_155707600_iOS.jpg" alt="Arannyal díszített mennyezett festménnyel">
+      </div>
+    </div>
+</section>
+
+<hr class="travel_divider">
+
+      <section class="galeria" id="austria">
+        <h2>Ausztria</h2>
+
+          <div class="columns">
+
+            <div class="column">
+              <img src="./photos/austria/DSC_0197.jpeg" alt="az alpok hegyvonulata és zöld fű">
+              <img src="./photos/austria/DSC_0054.jpeg" alt="egy ösvény a szakadék szélén és az alpok a háttérben">
+            </div>
+
+            <div class="column">
+              <img src="./photos/austria/Sunset-0248.jpeg" alt="Naplemente egy tisztáson az alpokban vörös fűvel">
+              <img src="./photos/austria/DSC_0204.jpeg" alt="Egy tehén fekszik a hegyek előtt naplementében">
+          </div>
+
+          <div class="column">
+            <img src="./photos/austria/DSC_0209-Copy.jpeg" alt="Egy tehenész a teheneivel a hegyekben">
+            <img src="./photos/austria/DSC_0025.jpeg" alt="Vad folyó a hegyekben borús időben">
+          </div>
+        </div>
+    </section>
+
+    <a id="jump-up-travel" href="#body">Ugrás az oldal tetejére</a>
+
+    <hr class="travel_divider">
+
+
+  <p class="idezet"><span lang="en"><cite>„Don’t shoot what it looks like. Shoot what it feels like.”
+  </cite> - David Alan Harvey </span></p>
+
+    </main>
+
+
+      <footer>
+        <h4>Vedd fel velem a kapcsolatot</h4>
+        <div id="logo">
+            <a href="https://www.facebook.com/zsofiaeszter.kato" target="_blank">
+                <figure>
+                    <img id="facebook" src="./photos/logo/facebook-logo-png-9025.png" alt="Facebook logo">
+                    <figcaption>Facebook</figcaption>
+                </figure>
+            </a>
+            <a href="https://www.instagram.com/k_zsofi18/" target="_blank">
+                <figure>
+                    <img id="instagram" src="./photos/logo/logo-instagram-png-13566.png" alt="Instagram logo">
+                    <figcaption>Instagram</figcaption>
+                </figure>
+            </a>
+            <a href="https://github.com/Zsofu007" target="_blank">
+              <figure>
+                  <img id="email" src="./photos/logo/github.png" alt="Github logo">
+                  <figcaption>Github</figcaption>
+              </figure>
+          </a>
+            
+        </div>
+    </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

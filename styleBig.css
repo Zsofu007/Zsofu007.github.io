@@ -1,0 +1,144 @@
+@import url('style.css');
+
+body {
+	font-size:2em;
+	
+}
+
+div#gyengenlato > a#vnagybetu{
+	display: none;
+}
+
+
+div#gyengenlato > a#vnormalbetus{
+    display: block;
+}
+
+
+a#nagybetu{
+	display: none;
+}
+
+
+a#normalbetus{
+    display: block;
+}
+
+.tartalom-leiras{
+    font-size: 2em;
+}
+
+.tartalom-leiras > h1{
+    font-size: 2.4em;
+}
+
+.navbar-brand > img {
+
+    height: 12vh;
+    
+}
+
+nav{
+    height: 12vh;
+    font-size: 1.5em;
+}
+
+.landing-screen{
+  
+    width: 100%;
+    height: 88vh;
+    
+    
+}
+
+.landing-screen > a{
+    height: 12vh;
+}
+
+.landing-screen > a img {
+    height: 12vh;
+}
+
+main{
+    font-size: 1.5em;
+}
+
+footer{
+    max-height: max-content;
+    height: 30vh;
+}
+
+#facebook, #instagram, #email{
+    height: 40px;
+}
+
+figure{
+    font-size: 1.5em;
+}
+
+#bemutatkozas, #elaboration{
+    
+    width: 75vw;
+    font-size: 1.5em;
+  
+}
+
+#bemutatkozas > h2 {
+   font-size: 2em;
+}
+
+#bemutatkozas > img {
+    width: 40vw;
+}
+
+#elaboration > article h3 {
+    font-size: 1.8em;
+}
+
+#jump-up{
+    margin-right: 12.5vw;
+}
+
+#motor > h2,#stpetersburg > h2,#austria > h2, #iceland > h2,#moscow > h2, #ireland > h2{
+    font-size: 2em;
+}
+
+
+@media (max-width:800px){
+    #bemutatkozas > h2 {
+        font-size: 1.4em;
+    }
+
+    #elaboration > article h3 {
+        font-size: 1.8em;
+    }
+
+    #motor > h2,#stpetersburg > h2,#austria > h2, #iceland > h2,#moscow > h2, #ireland > h2{
+        font-size: 1.5em;
+    }
+
+    #jump-up, #jump-up-travel{
+        justify-self:center;
+        margin-right: 0vw;
+    }
+}
+
+@media (max-width:600px){
+    #bemutatkozas > h2 {
+        font-size: 1.2em;
+    }
+
+    #jump-up, #jump-up-travel{
+        justify-self:center;
+        
+    }
+
+    #motor > h2,#stpetersburg > h2,#austria > h2, #iceland > h2,#moscow > h2, #ireland > h2{
+        font-size: 1.2em;
+    }
+
+    #elaboration > article h3 {
+        font-size: 1.2em;
+    }
+}
+
